@@ -1,3 +1,5 @@
+-Needs Labeled Pneumonia Daraset
+- Model built without AI libraries like Pytorch or TensorFlow
 =================================== INFO ============================================
 - Mini Batch Gradient Descent(MBGD) CNN Implementation for Pneumonia Detection In Xray Images
 
