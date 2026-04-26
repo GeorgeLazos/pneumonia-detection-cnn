@@ -183,3 +183,9 @@ Each epoch:
   `NUM_FILTERS` is the easiest way to speed up experimentation.
 - Hyperparameters marked *"Sensitive — do not change"* (image size, filter
   shape) require corresponding changes elsewhere in the network.
+
+## REFERENCES
+
+1.Kermany, D., Zhang, K., & Goldbaum, M. (2018). *Labeled Optical Coherence
+> Tomography (OCT) and Chest X-Ray Images for Classification.* Mendeley Data,
+> V2. https://doi.org/10.17632/rscbjbr9sj.2
