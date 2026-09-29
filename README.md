@@ -93,34 +93,6 @@ False positives (51) and false negatives (43) were close in number, which shows 
 
 ---
 
-## Project layout
-
-```
-CNN/
-├── main.py              # Single-file implementation (layers, train/val/test, IO)
-├── README.txt           # Original short summary
-├── README_NEW.md        # (this file)
-├── DESCRIPTION_NEW.md   # One-page project description
-├── Aug_img_xray/        # Output for augmented training images (created at runtime)
-└── Weights/
-    └── RUN_<n>__<MM-DD>/
-        ├── Epoch_<k>__<HH-MM-SS>/
-        │   ├── conv1..conv4.npz
-        │   ├── c_batch_norm1..c_batch_norm4.npz
-        │   ├── dense1..dense2.npz
-        │   ├── d_batch_norm1.npz
-        │   └── val.txt          # per-epoch validation metrics + confusion matrix
-        ├── train_log.txt
-        └── val_log.txt
-```
-
-A weights directory uses `.npz` per layer so a run can be resumed from any saved
-epoch — pass the run folder name to `train(run_file=...)` and it picks up from
-the last completed epoch (state, BN running stats, error logs, early-stop wait
-counter, all restored).
-
----
-
 ## Expected dataset
 
 Place the chest X-ray dataset under a sibling `IMG_xray/` directory (not
