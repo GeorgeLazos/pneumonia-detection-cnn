@@ -112,7 +112,6 @@ IMG_xray/
 ```
 
 Built around the Kermany et al. paediatric chest X-ray dataset
-(5,216 train / 16 val / 624 test images).
 
 ---
 
